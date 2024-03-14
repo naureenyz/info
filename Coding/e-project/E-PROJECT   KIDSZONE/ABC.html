@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      background: url(Image2/alphabets/bg1.jpg);
+      overflow-x: hidden;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        overflow-x: hidden;
+      }
+    }
+
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+      body {
+        overflow-x: hidden;
+      }
+    }
+
+    .navbar {
+      background-color: white;
+    }
+
+    .logo-nav {
+      display: flex;
+      justify-content: center;
+      background-image: url(Image2/alphabets/bg.jpg);
+    }
+
+    .navbar-brand img {
+      width: 23vh;
+      height: 20vh;
+    }
+
+    .nav-item img {
+      width: 8vh;
+      height: 8vh;
+      display: flex;
+    }
+
+    .dropdown:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown>.dropdown-toggle:active {
+      /* Without this, clicking will make it sticky */
+      pointer-events: none;
+    }
+
+
+    .nav-item {
+      width: 210px;
+    }
+
+    .banner img {
+      height: 50vh;
+    }
+    .card-body {
+      display: none;
+    }
+    .card img {
+      height: 50px;
+      width: 50px;
+    }
+
+    .bshadow {
+      box-shadow: 7px 7px 20px 2px rgba(92, 91, 91, 0.46);
+      -webkit-box-shadow: 7px 7px 20px 2px rgba(97, 95, 95, 0.46);
+      -moz-box-shadow: 7px 7px 20px 2px rgba(80, 75, 75, 0.46);
+    }
+
+    .card img {
+      height: 160px;
+      width: 100px;
+    }
+
+    .card {
+      border: 4px solid black;
+    }
+
+    .video H1 {
+      justify-content: center;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+    }
+
+    /* footer */
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container1-fluid {
+      background-color: rgb(228, 122, 23);
+      color: white;
+
+
+    }
+
+    .main-footer {
+      background-color: black;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .main-footer p:hover {
+      color: orange;
+      cursor: pointer;
+      font-weight: bolder;
+    }
+
+    .vr {
+      height: 30px;
+      color: rgb(0, 0, 0);
+      font-size: 5vh;
+      font-weight: bolder;
+    }
+
+    .footer-img {
+      height: 200px;
+      width: 190px;
+      margin-top: 14%;
+    }
+
+    .container1-fluid p {
+      color: rgb(233, 232, 232);
+      font-size: 3vh;
+      font-weight: bold;
+    }
+    .container1-fluid p:hover {
+      color: black;
+      cursor: pointer;
+    }
+
+    .container1-fluid i {
+      color: rgb(0, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <div class="logo-nav">
+    <img src="Image2/nav/logo1.png" style="height: 30vh; width: 40vh;" alt="">
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link d-flex flex-column justify-content-center align-items-center active" aria-current="page"
+              href="index.html">
+              <img src="Image2/nav/icons8-home.gif" alt="">
+              Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link   d-flex flex-column justify-content-center align-items-center" href="Leaning.html"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="Image2/nav/icons8-book.gif" alt="">
+              LEARNING
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="ABC.html">ABC</a></li>
+              <li><a class="dropdown-item" href="123.html">123</a></li>
+              <li><a class="dropdown-item" href="tables.html">TABLES</a></li>
+              <li><a class="dropdown-item" href="rhymes.html">RHYMES</a></li>
+
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link   d-flex flex-column justify-content-center align-items-center" href="Leaning.html"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="Image2/nav/icons8-knowledge.gif" alt="">
+              BASIC KNOWLEDGE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="animalname.html">ANIMALS NAMES</a></li>
+              <li><a class="dropdown-item" href="fruitsname.html">FRUITS NAMES</a></li>
+              <li><a class="dropdown-item" href="vegetablesname.html">VEGETABLES NAME</a></li>
+              <li><a class="dropdown-item" href="daysname.html">DAYS NAME </a></li>
+              <li><a class="dropdown-item" href="monthsname.html">MONTHS NAMES </a></li>
+              <li><a class="dropdown-item" href="colors.html">BASIC COLORS </a></li>
+            </ul>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link   d-flex flex-column justify-content-center align-items-center" href="Leaning.html"
+              id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="Image2/nav/icons8-math.gif" alt="">
+              MATHEMATICS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="addition.html">ADDITION</a></li>
+              <li><a class="dropdown-item" href="subtraction.html">SUBTRACTION</a></li>
+              <li><a class="dropdown-item" href="multiplication.html">MULTIPLICATION</a></li>
+
+
+
+
+            </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <img src="Image2/alphabets/bannerabc.jpeg" class="img-fluid w-100" alt="">
+  </div>
+
+  <!-- cards -->
+
+  <section>
+    <div class="container-fluid mt-5">
+
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6 col-sm-12   ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/aa.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/apple.png" alt="">
+                <p class="card-text">apple</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/bb.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/ball..png" alt="">
+                <p class="card-text">Ball</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/c.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/cat.png" alt="">
+                <p class="card-text">Cat</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/d.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/dog.png" alt="">
+                <p class="card-text">Dog</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/e.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/elephant.png" alt="">
+                <p class="card-text">Elephant</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/f.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/fish.png" alt="">
+                <p class="card-text">Fish</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/g.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/grapes" alt="">
+                <p class="card-text">Grapes</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/hh.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/house.PNG" alt="">
+                <p class="card-text">House</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/i.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/igloo.png" alt="">
+                <p class="card-text">Igloo</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/j.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/jelly-removebg-preview.png" alt="">
+                <p class="card-text">Jell</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/kk.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/kite-removebg-preview.png" alt="">
+                <p class="card-text">Kite</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/l.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/lion-removebg-preview.png" alt="">
+                <p class="card-text">Lion</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/m.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/mo-removebg-preview.png" alt="">
+                <p class="card-text">Monkey</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/n.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/nest-removebg-preview.png" alt="">
+                <p class="card-text">Nest</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/o.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/orange.jpg" alt="">
+                <p class="card-text">Orange</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/p.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/panda-removebg-preview.png" alt="">
+                <p class="card-text">Panda</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/qq.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/queen-removebg-preview.png" alt="">
+                <p class="card-text">Queen</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/r.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/rainbow-removebg-preview.png" alt="">
+                <p class="card-text">Rainbow</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/s.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/sun-removebg-preview.png" alt="">
+                <p class="card-text">Sun</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/t.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/table-removebg-preview.png" alt="">
+                <p class="card-text">Table</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/u.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/umberalla-removebg-preview.png" alt="">
+                <p class="card-text">Umbrella</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/v.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/van.png" alt="">
+                <p class="card-text">Van</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/w.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/wale.png" alt="">
+                <p class="card-text">Whale</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/x.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/x-ray.png" alt="">
+                <p class="card-text">Xray</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/y.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/yak.png" alt="">
+                <p class="card-text">Yak</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12  ">
+          <div class="border p-4 bshadow">
+            <div class="card bshadow" id="c1">
+              <img src="Image2/alphabets/z.png" class="card-img-top mx-auto" alt="...">
+              <div class="card-body text-center" id="cb1">
+                <h5 class="card-title ">for</h5>
+                <img src="Image2/alphabets/zebra.png" alt="">
+                <p class="card-text">Zebra</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5">
+    <div class="row row-cols-1 row-cols-md-12 row-cols-sm-12 g-4">
+      <div class="col">
+        <div class="card1" style="height: 60vh;">
+          <div class="card-body1" style="height: 90%;">
+
+            <iframe src="https://www.youtube.com/embed/Nkmarl4ynRM?si=WMcJ64-komwVkxq4" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen style="height: 100%; width: 100%;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container1-fluid">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="vr"> Quick Links</h3>
+          <p> <i class="bi bi-arrow-right"></i>Home</p>
+          <p> <i class="bi bi-arrow-right"></i>Learning</p>
+          <p> <i class="bi bi-arrow-right"></i>Knowlegde</p>
+          <p> <i class="bi bi-arrow-right"></i>Mathematics</p>
+        </div>
+
+        <div class="col-md-4">
+          <div class="col-md-6">
+            <h5 class="vr "> About US</h5>
+            <br>
+            <div>
+              <h2>CONTACT</h2>
+              <i class="bi bi-telephone-fill"></i>
+              <p>+921234567855</p>
+              <p>+922387654322</p>
+            </div>
+            <hr>
+            <div>
+              <H2>EMAIL</H2>
+              <i class="bi bi-envelope-fill"></i>
+              <p>kidszone@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <img src="Image2/nav/logo1.png" alt="" class="footer-img">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-footer">
+    <p>copyright&copy;2024; <span>KIDS ZONE </span></p>
+  </div>
+</body>
+
+
+
+
+<script>
+  $(document).ready(function () {
+    $(".card").hover(
+      function () {
+        // On hover, expand the card body
+        $(this).find(".card-body").slideDown(600);
+
+      },
+      function () {
+        // On hover out, collapse the card body
+        $(this).find(".card-body").slideUp(600);
+      }
+
+
+    );
+  });
+</script>
+
+</html>
